@@ -1,5 +1,5 @@
 # HitungDuitApp
 - MVVM Pattern
-- Reposotory Pattern
+- Repository Pattern
 - Koin
 - Room Database
