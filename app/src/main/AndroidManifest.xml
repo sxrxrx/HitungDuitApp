@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ngedev.hitungduit">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HitungDuit">
+        <activity
+            android:name=".ui.expense.detail.DetailExpenseActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.expense.list.ExpenseListActivity"/>
+        <activity
+            android:name=".ui.expense.add.AddExpenseActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.expense.list.ExpenseListActivity"/>
+        <activity
+            android:name=".ui.wallet.detail.DetailWalletActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.wallet.list.WalletListActivity" />
+        <activity
+            android:name=".ui.wallet.add.AddWalletActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.wallet.list.WalletListActivity" />
+        <activity
+            android:name=".ui.wallet.list.WalletListActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity"/>
+        <activity
+            android:name=".ui.expense.list.ExpenseListActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ui.history.HistoryActivity"
+            android:exported="false"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.HitungDuit.NoActionBarStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
